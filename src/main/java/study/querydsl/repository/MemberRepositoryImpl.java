@@ -91,7 +91,7 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom{
                 .where(
                         usernameEq(condition.getUsername()),
                         teamNameEq(condition.getTeamName()),
-                        ageGoe(condition.getAgeGoe화()),
+                        ageGoe(condition.getAgeGoe()),
                         ageLoe(condition.getAgeLoe())
                 )
                 .offset(pageable.getOffset())
