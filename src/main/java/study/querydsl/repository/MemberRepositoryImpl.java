@@ -74,7 +74,6 @@ public class MemberRepositoryImpl extends QuerydslRepositorySupport implements M
         return new PageImpl<>(content, pageable, total);
     }
 
-    @Override
     public Page<MemberTeamDto> searchPageSimple2(MemberSearchCondition condition, Pageable pageable) {
         JPQLQuery<MemberTeamDto> jpaQuery = from(member)
                 .leftJoin(member.team, team)
